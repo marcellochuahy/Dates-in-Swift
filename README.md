@@ -102,10 +102,10 @@ dateFormatter.dateFormat = "hh"
 let hourFrom00To12: String = dateFormatter.string(from: date)
 
 dateFormatter.dateFormat = "H"
-let hourFrom0To24: String = dateFormatter.string(from: date)
+let hourFrom0To23: String = dateFormatter.string(from: date)
 
 dateFormatter.dateFormat = "HH"
-let hourFrom00To24: String = dateFormatter.string(from: date)
+let hourFrom00To23: String = dateFormatter.string(from: date)
 
 dateFormatter.dateFormat = "m"
 let minuteFrom0To59: String = dateFormatter.string(from: date)
@@ -136,11 +136,11 @@ extension Date {
 		case monthFrom01To12          = "MM"
 		case fullNameOfTheMonth       = "MMMM"
 		case yearWith4Digits          = "yyyy"
-		case hourFrom0To12            = "h"
+		case hourFrom0To11            = "h"
 		case ampm                     = "a"
 		case hourFrom00To12           = "hh"
-		case hourFrom0To24            = "H"
-		case hourFrom00To24           = "HH"
+		case hourFrom0To23            = "H"
+		case hourFrom00To23           = "HH"
 		case minuteFrom0To59          = "m"
 		case minuteFrom00To59         = "mm"
 	}
