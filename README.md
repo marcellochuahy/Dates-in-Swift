@@ -7,6 +7,8 @@ import Foundation
 
 ## 1a. Creating a specific Date
 ```
+import Foundation
+
 let calendar = Calendar.current
 let dateComponents = DateComponents(calendar: calendar, year: 2050, month: 1, day: 15)
 let customDate = calendar.date(from: dateComponents)!
@@ -14,17 +16,23 @@ let customDate = calendar.date(from: dateComponents)!
 
 ## 1b. Creating a Date "now"
 ```
+import Foundation
+
 let now: Date = Date()
 ```
 
 ## 1c. Creating a Date from another, adding or subtracting values
 ```
+import Foundation
+
 let tomorrow: Date?  = calendar.date(byAdding: .day, value:  1, to: now)
 let yesterday: Date? = calendar.date(byAdding: .day, value: -1, to: now)
 ```
 
 ## 2. Formatting a Date
 ```
+import Foundation
+
 let dateFormatter = DateFormatter()
 dateFormatter.locale = Locale(identifier: "pt_BR")
 dateFormatter.dateFormat = "EEEE - dd/MMMM/yyyy" // quarta-feira - 09/setembro/2020
@@ -49,12 +57,16 @@ dateFormatter.dateFormat = "EEEE - dd/MMMM/yyyy" // quarta-feira - 09/setembro/2
 
 ## 3. Creating a String from a Date
 ```
-Criando uma String a partir de uma data:
+import Foundation
+
 let formattedDate = dateFormatter.string(from: date)
 print(formattedDate)
+```
 
 ## 4. "Dismantling" a date
 ```
+import Foundation
+
 dateFormatter.dateFormat = "EEEE"
 let dayOfWeek: String = dateFormatter.string(from: date)
 
