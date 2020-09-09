@@ -8,12 +8,7 @@ import Foundation
 ## 1a. Creating a specific Date
 ```
 let calendar = Calendar.current
-
-let dateComponents = DateComponents(calendar: calendar,
-									year: 2050,
-									month: 1,
-									day: 15)
-                  
+let dateComponents = DateComponents(calendar: calendar, year: 2050, month: 1, day: 15)
 let customDate = calendar.date(from: dateComponents)!
 ```
 
