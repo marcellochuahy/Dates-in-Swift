@@ -118,7 +118,7 @@ let txt = "Hoje é \(dayOfWeek), \(dayOfTheMonthWith2Digits)/\(fullNameOfTheMont
 print(txt) // Hoje é quarta-feira, 09/09/2020. São 16:14
 ```
 
-## 5. Extending Date
+## 4. Extending Date
 ```
 import Foundation
 
